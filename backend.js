@@ -28,7 +28,7 @@ app.get('/data', (req, res) => {
         Age: req.query.Age
     };
     
-    const path = "C:/Users/USER/Desktop/Node js/practice_1/userData.json";
+    const path = "./userData.json";
     fs.readFile(path, "utf8", (err, data) => {
         let users = [];
 
